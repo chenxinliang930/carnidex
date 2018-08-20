@@ -1,0 +1,258 @@
+/*侧边栏*/
+html{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+	width: 73px;
+	height: 200px;
+	background-color:#464646;
+	position: fixed;
+	right: 0;
+	top: 30%;
+	z-index: 9999;
+	border-radius: 5px;
+}
+.navbar ul{
+	padding: 0 5px;
+	box-sizing:border-box;
+	width: 100%;
+	height: 100%;
+}
+.navbar ul li{
+	color: #fff;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	height: 25%;
+	line-height:50px;
+	text-align: center;
+}
+
+
+/*轮播图*/
+.bannerUl {
+        /* position: absolute; */
+        margin-top: 3px;
+        height: 500px;
+        top: 0;
+        left: 0;
+    }
+    .bannerUl li {
+        float: left;
+        height: 100%;
+    }
+    .bannerUl li img{
+    	height: 100%;
+    }
+    .blockClick {
+        height: 6px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 330px auto;
+    }
+    .blockClick li {
+        width: 35px;
+        height: 3px;
+        float: left;
+        background: rgba(0,0,0,0.5);
+        margin-left: 7px;
+        cursor: pointer;
+    }
+    .blockClick li:first-child {
+        margin: 0;
+    }
+    .blockClick .active {
+        background: white;
+    }
+    .indexBanner>p {
+        display: none;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        border-radius: 50%;
+        background-color: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 152px;
+        cursor: pointer;
+       
+        color: white;
+    }
+    .indexBanner>p span{
+    	 font-size: 48px;
+    	 color: #fff;
+    }
+    .indexBanner>p .right_r{
+    	position: absolute;
+    	left: 8px;
+    	top: -2px;
+    }
+    .indexBanner>p .left_l{
+    	position: absolute;
+    	left: 4px;
+    	top: -2px;
+    }
+    .indexBanner>p.left{
+        left: 24px;
+    }
+    .indexBanner>p.right{
+        right: 24px;
+    }
+    .bannerUl:after{
+        display: block;
+        content: '.';
+        clear: both;
+        line-height: 0;
+        visibility: hidden;
+    }
+
+    /*轮播图2*/
+    .all {
+            width: 1260px;
+            height: 200px;
+            padding: 7px;
+           /* border: 1px solid #ccc;*/
+           margin: 0 auto;
+            position: relative;
+        }
+
+        .screen {
+        	margin: 0 auto;
+        	margin-top: 20px;
+            width: 1260px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .screen li {
+        	/*padding: 10px;*/
+            width: 420px;
+            height: 200px;
+            text-align: center;
+            box-sizing:border-box;
+            float: left;
+        }
+        .screen ul {
+        	/*background-color: red;*/
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 4000px;
+        }
+        #arr {
+           /* display: none;*/
+            z-index: 1000;
+
+        }
+
+        #arr span {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            right: 100px;
+            top: 120%;
+            margin-top: -20px;
+            background-color: gray;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #fff;
+           
+            border: 1px solid #fff;
+        }
+
+        #arr #right {
+            right: 38px;
+            left: auto;
+        }
+        #arr span:hover{
+        	background-color: red;
+        }
+      /*热销车型*/
+     .hotsale{
+     	width: 1200px;
+     	height: 500px;
+     	margin: 0 auto;
+     	/*background-color: yellow;*/
+     	margin-top: 100px;
+     }
+     .hotsale h1{
+     	color: #000;
+     	font-size: 20px;
+     }
+     .hotsale .hotsale_l,.hotsale .hotsale_r{
+     	height: 100%;
+     	float: left;
+     	margin-top: 20px;
+     }
+     .hotsale .hotsale_l{
+     	width: 15%;
+     	background-color: #eee;
+     }
+     .hotsale .hotsale_l img{
+     	width: 100%;
+     	height: 100%;
+     }
+     .hotsale .hotsale_r{
+		width: 85%;
+     	/*background-color: #000;*/
+     }
+     .hotsale .hotsale_r ul{
+     	width: 100%;
+     	height: 100%;
+     }
+     .hotsale .hotsale_r ul li{
+     	background-color: #F3F3F3;
+     	margin-left: 10px;
+     	margin-bottom: 10px;
+     	/*margin-top: 10px;*/
+     	/*background-color: blue;*/
+     	width: 24%;
+     	height: 48%;
+     	float: left;
+     }
+      .hotsale .hotsale_r ul li img{
+      	width: 100%;
+      	height: 70%;
+      }
+      .hotsale_r .top{
+		height: 25px;
+      	padding: 0 5px;
+      	box-sizing:border-box;
+      }
+      .hotsale_r .top .top_l{
+      		color: #000;
+      		font-weight: 700;
+      	font-size: 16px;
+      	float: left;
+      }
+      .hotsale_r .top .top_r{
+      	float: right;
+      }
+      .hotsale_r .top .top_r span{
+      	color:red;
+      	font-size: 16px;
+      		font-weight: 700;
+      }
+      .hotsale_r .bottom{
+      	padding: 0 5px;
+      }
+      .hotsale_r .bottom button{
+      	font-style: 14px;
+      	border:none;
+      	background-color: red;
+      	color: #fff;
+      	border-radius: 10px;
+      	padding: 1px 15px;
+      	float: right;
+      	margin-right: 10px;
+      	outline: none;
+      	cursor: pointer;
+      }
